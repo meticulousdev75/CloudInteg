@@ -9,6 +9,8 @@ parser.add_argument("--disable", help="Disables an access key", action="store_tr
 parser.add_argument("--delete", help="Deletes an access key", action="store_true")
 args = parser.parse_args()
 username = args.username
+aws_access_key = "AKIA6BVIDDJOBJK7XMOR"
+aws_secret_access_key = "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"
 # Uncomment below line after tests
 #aws_access_key = args.key
 
@@ -19,7 +21,11 @@ def create_key(username):
     access_key_metadata = iam_client.create_access_key(UserName=username)['AccessKey']
     access_key = access_key_metadata['AccessKeyId']
     secret_key = access_key_metadata['SecretAccessKey']
-    print "your new access key is %s and your new secret key is %s" % (access_key, secret_key)
+# Check if new secret access key is the same
+    if secret_key == aws_secret_access_key:
+        print "New secret key is the same as the old key..Try again"
+    else:
+        print "your new access key is %s and your new secret key is %s" % (access_key, secret_key)
     access_key = ''
     secret_key = ''
 
