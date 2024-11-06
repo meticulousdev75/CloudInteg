@@ -9,8 +9,8 @@ parser.add_argument("--disable", help="Disables an access key", action="store_tr
 parser.add_argument("--delete", help="Deletes an access key", action="store_true")
 args = parser.parse_args()
 username = args.username
-aws_access_key = "AKIA6BVIDDJOBJK7XMOR"
-aws_secret_access_key = "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"
+aws_access_key = ""
+aws_secret_access_key = ""
 # Uncomment below line after tests
 #aws_access_key = args.key
 
