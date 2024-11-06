@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @meticulousdev75
-- 👀 I’m interested in cloud technologies
+- 👀 I’m interested in cloud technologies and i am trying to step in cloud security domain
 - 🌱 I’m currently learning python
 - 📫 How to reach me meticulousdev75@nowaytoreachme.com
 - 😄 Pronouns: ...
